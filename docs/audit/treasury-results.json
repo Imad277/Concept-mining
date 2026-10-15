@@ -1,0 +1,407 @@
+{
+  "snapshot": "2026-10-14T19:16:46.063Z",
+  "price": 4500,
+  "decision": {
+    "bestModel": "C",
+    "bestShare": 2000,
+    "modelEval": [
+      {
+        "id": "A",
+        "stress": -176018.648595,
+        "neutral": -29762.16859500017
+      },
+      {
+        "id": "B",
+        "stress": -155004.88617900008,
+        "neutral": -52625.35017899977
+      },
+      {
+        "id": "C",
+        "stress": -145355.49590700003,
+        "neutral": -57601.607907000114
+      }
+    ],
+    "shareEval": [
+      {
+        "s": 1000,
+        "partPerTenK": 18544.31999999999
+      },
+      {
+        "s": 1500,
+        "partPerTenK": 27816.479999999985
+      },
+      {
+        "s": 2000,
+        "partPerTenK": 37088.63999999999
+      },
+      {
+        "s": 2500,
+        "partPerTenK": 46360.799999999974
+      }
+    ],
+    "minePerTenK": 560653.3333333334
+  },
+  "combos": [
+    {
+      "label": "Mining Basis + Treasury 0 %",
+      "mining": 560653.3333333334,
+      "share": 0,
+      "total": 560653.3333333334,
+      "lindenValue": -128003.57312666693,
+      "delta": -843474.6842377781
+    },
+    {
+      "label": "Mining Basis + Treasury +10 %",
+      "mining": 560653.3333333334,
+      "share": 14528.63999999999,
+      "total": 575181.9733333334,
+      "lindenValue": -35798.386566666886,
+      "delta": -751269.497677778
+    },
+    {
+      "label": "Mining Basis + Treasury +20 %",
+      "mining": 560653.3333333334,
+      "share": 37088.63999999999,
+      "total": 597741.9733333334,
+      "lindenValue": 46132.01343333323,
+      "delta": -669339.0976777779
+    },
+    {
+      "label": "Mining Basis + Treasury +35 %",
+      "mining": 560653.3333333334,
+      "share": 70928.64,
+      "total": 631581.9733333334,
+      "lindenValue": 169027.61343333314,
+      "delta": -546443.497677778
+    },
+    {
+      "label": "Mining Basis + Treasury −20 %",
+      "mining": 560653.3333333334,
+      "share": 0,
+      "total": 560653.3333333334,
+      "lindenValue": -323012.2131266667,
+      "delta": -1038483.3242377779
+    },
+    {
+      "label": "Mining Abschwung + Treasury −20 %",
+      "mining": 22742.222222222223,
+      "share": 0,
+      "total": 22742.222222222223,
+      "lindenValue": -170621.67429333334,
+      "delta": -524717.2298488889
+    },
+    {
+      "label": "Mining Abschwung + Treasury 0 %",
+      "mining": 22742.222222222223,
+      "share": 0,
+      "total": 22742.222222222223,
+      "lindenValue": 24386.96570666649,
+      "delta": -329708.5898488891
+    },
+    {
+      "label": "Mining Abschwung + Treasury +20 %",
+      "mining": 22742.222222222223,
+      "share": 37088.63999999999,
+      "total": 59830.862222222175,
+      "lindenValue": 198522.55226666652,
+      "delta": -155573.00328888904
+    }
+  ],
+  "allocations": [
+    {
+      "model": "A",
+      "scenario": "stress",
+      "value24": -176018.648595,
+      "delta": -497980.64859500004
+    },
+    {
+      "model": "A",
+      "scenario": "neutral",
+      "value24": -29762.16859500017,
+      "delta": -351724.16859500017
+    },
+    {
+      "model": "A",
+      "scenario": "conservative-positive",
+      "value24": 39391.72132499964,
+      "delta": -282570.27867500036
+    },
+    {
+      "model": "A",
+      "scenario": "strong",
+      "value24": 100839.52132499963,
+      "delta": -221122.47867500037
+    },
+    {
+      "model": "A",
+      "scenario": "high",
+      "value24": 193011.22132499958,
+      "delta": -128950.77867500042
+    },
+    {
+      "model": "B",
+      "scenario": "stress",
+      "value24": -155004.88617900008,
+      "delta": -476966.8861790001
+    },
+    {
+      "model": "B",
+      "scenario": "neutral",
+      "value24": -52625.35017899977,
+      "delta": -374587.35017899977
+    },
+    {
+      "model": "B",
+      "scenario": "conservative-positive",
+      "value24": -4217.627234999847,
+      "delta": -326179.62723499985
+    },
+    {
+      "model": "B",
+      "scenario": "strong",
+      "value24": 38795.832765000116,
+      "delta": -283166.1672349999
+    },
+    {
+      "model": "B",
+      "scenario": "high",
+      "value24": 103316.02276500012,
+      "delta": -218645.97723499988
+    },
+    {
+      "model": "C",
+      "scenario": "stress",
+      "value24": -145355.49590700003,
+      "delta": -467317.49590700003
+    },
+    {
+      "model": "C",
+      "scenario": "neutral",
+      "value24": -57601.607907000114,
+      "delta": -379563.6079070001
+    },
+    {
+      "model": "C",
+      "scenario": "conservative-positive",
+      "value24": -16109.273955000099,
+      "delta": -338071.2739550001
+    },
+    {
+      "model": "C",
+      "scenario": "strong",
+      "value24": 20759.406044999952,
+      "delta": -301202.59395500005
+    },
+    {
+      "model": "C",
+      "scenario": "high",
+      "value24": 76062.42604499991,
+      "delta": -245899.5739550001
+    }
+  ],
+  "shares": [
+    {
+      "s": 1000,
+      "scenario": "stress",
+      "share": 0,
+      "retained": 0,
+      "delta": -1038483.3242377779,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 1000,
+      "scenario": "neutral",
+      "share": 0,
+      "retained": 0,
+      "delta": -843474.6842377781,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 1000,
+      "scenario": "conservative-positive",
+      "share": 7264.319999999988,
+      "retained": 65378.87999999989,
+      "delta": -744674.100477778,
+      "totalReturn": 0.5679176533333333
+    },
+    {
+      "s": 1000,
+      "scenario": "strong",
+      "share": 18544.31999999999,
+      "retained": 166898.87999999992,
+      "delta": -652502.4004777779,
+      "totalReturn": 0.5791976533333334
+    },
+    {
+      "s": 1000,
+      "scenario": "high",
+      "share": 35464.31999999999,
+      "retained": 319178.8799999999,
+      "delta": -514244.85047777795,
+      "totalReturn": 0.5961176533333333
+    },
+    {
+      "s": 1500,
+      "scenario": "stress",
+      "share": 0,
+      "retained": 0,
+      "delta": -1038483.3242377779,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 1500,
+      "scenario": "neutral",
+      "share": 0,
+      "retained": 0,
+      "delta": -843474.6842377781,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 1500,
+      "scenario": "conservative-positive",
+      "share": 10896.479999999981,
+      "retained": 61746.7199999999,
+      "delta": -747971.7990777779,
+      "totalReturn": 0.5715498133333332
+    },
+    {
+      "s": 1500,
+      "scenario": "strong",
+      "share": 27816.479999999985,
+      "retained": 157626.71999999988,
+      "delta": -660920.7490777778,
+      "totalReturn": 0.5884698133333333
+    },
+    {
+      "s": 1500,
+      "scenario": "high",
+      "share": 53196.47999999998,
+      "retained": 301446.7199999999,
+      "delta": -530344.1740777779,
+      "totalReturn": 0.6138498133333332
+    },
+    {
+      "s": 2000,
+      "scenario": "stress",
+      "share": 0,
+      "retained": 0,
+      "delta": -1038483.3242377779,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 2000,
+      "scenario": "neutral",
+      "share": 0,
+      "retained": 0,
+      "delta": -843474.6842377781,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 2000,
+      "scenario": "conservative-positive",
+      "share": 14528.63999999999,
+      "retained": 58114.55999999996,
+      "delta": -751269.497677778,
+      "totalReturn": 0.5751819733333334
+    },
+    {
+      "s": 2000,
+      "scenario": "strong",
+      "share": 37088.63999999999,
+      "retained": 148354.55999999994,
+      "delta": -669339.0976777779,
+      "totalReturn": 0.5977419733333335
+    },
+    {
+      "s": 2000,
+      "scenario": "high",
+      "share": 70928.64,
+      "retained": 283714.55999999994,
+      "delta": -546443.497677778,
+      "totalReturn": 0.6315819733333334
+    },
+    {
+      "s": 2500,
+      "scenario": "stress",
+      "share": 0,
+      "retained": 0,
+      "delta": -1038483.3242377779,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 2500,
+      "scenario": "neutral",
+      "share": 0,
+      "retained": 0,
+      "delta": -843474.6842377781,
+      "totalReturn": 0.5606533333333333
+    },
+    {
+      "s": 2500,
+      "scenario": "conservative-positive",
+      "share": 18160.79999999997,
+      "retained": 54482.39999999991,
+      "delta": -754567.1962777779,
+      "totalReturn": 0.5788141333333333
+    },
+    {
+      "s": 2500,
+      "scenario": "strong",
+      "share": 46360.799999999974,
+      "retained": 139082.3999999999,
+      "delta": -677757.4462777779,
+      "totalReturn": 0.6070141333333333
+    },
+    {
+      "s": 2500,
+      "scenario": "high",
+      "share": 88660.79999999997,
+      "retained": 265982.3999999999,
+      "delta": -562542.8212777779,
+      "totalReturn": 0.6493141333333333
+    }
+  ],
+  "final": {
+    "allocation": {
+      "id": "C",
+      "name": "Modell C · 60/25/15",
+      "allocation": {
+        "treasuryBps": 6000,
+        "infrastructureBps": 2500,
+        "liquidityBps": 1500
+      }
+    },
+    "share": 2000,
+    "recBe": 10169.606125171817,
+    "recBeDown": 3898.8434486941132,
+    "invRange": [
+      560653.3333333334,
+      560653.3333333334,
+      575181.9733333334,
+      597741.9733333334,
+      631581.9733333334
+    ],
+    "lindenRange": [
+      -1038483.3242377779,
+      -843474.6842377781,
+      -751269.497677778,
+      -669339.0976777779,
+      -546443.497677778
+    ],
+    "valRange": [
+      -323012.2131266667,
+      -128003.57312666693,
+      -35798.386566666886,
+      46132.01343333323,
+      169027.61343333314
+    ],
+    "beInv": [
+      10.235483527595933,
+      10.235483527595933,
+      10.235483527595933,
+      10.235483527595933,
+      10.235483527595933
+    ],
+    "miningBe": 10.235483527595933
+  }
+}

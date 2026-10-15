@@ -1,0 +1,291 @@
+{
+  "snapshot": "2026-10-14T19:16:46.063Z",
+  "technical": 515258,
+  "grid": [
+    {
+      "price": 4500,
+      "scenario": "conservative",
+      "year1": 583621,
+      "breakEven": null,
+      "after24": -350529
+    },
+    {
+      "price": 4500,
+      "scenario": "base",
+      "year1": 1145015,
+      "breakEven": 10.23551601082557,
+      "after24": 560657
+    },
+    {
+      "price": 4500,
+      "scenario": "upside",
+      "year1": 1546822,
+      "breakEven": 7.1699482120433675,
+      "after24": 1130670
+    },
+    {
+      "price": 4750,
+      "scenario": "conservative",
+      "year1": 552883,
+      "breakEven": null,
+      "after24": -384751
+    },
+    {
+      "price": 4750,
+      "scenario": "base",
+      "year1": 1084750,
+      "breakEven": 10.900810253946986,
+      "after24": 478507
+    },
+    {
+      "price": 4750,
+      "scenario": "upside",
+      "year1": 1465383,
+      "breakEven": 7.626052604220813,
+      "after24": 1018479
+    },
+    {
+      "price": 5000,
+      "scenario": "conservative",
+      "year1": 525247,
+      "breakEven": null,
+      "after24": -415499
+    },
+    {
+      "price": 5000,
+      "scenario": "base",
+      "year1": 1030517,
+      "breakEven": 11.582290782665828,
+      "after24": 404593
+    },
+    {
+      "price": 5000,
+      "scenario": "upside",
+      "year1": 1392109,
+      "breakEven": 8.085032599451951,
+      "after24": 917552
+    },
+    {
+      "price": 5250,
+      "scenario": "conservative",
+      "year1": 500230,
+      "breakEven": null,
+      "after24": -443342
+    },
+    {
+      "price": 5250,
+      "scenario": "base",
+      "year1": 981435,
+      "breakEven": 12.2745530102486,
+      "after24": 337688
+    },
+    {
+      "price": 5250,
+      "scenario": "upside",
+      "year1": 1325821,
+      "breakEven": 8.55746048754353,
+      "after24": 826240
+    },
+    {
+      "price": 5500,
+      "scenario": "conservative",
+      "year1": 477506,
+      "breakEven": null,
+      "after24": -468620
+    },
+    {
+      "price": 5500,
+      "scenario": "base",
+      "year1": 936838,
+      "breakEven": 12.978542767285854,
+      "after24": 276909
+    },
+    {
+      "price": 5500,
+      "scenario": "upside",
+      "year1": 1265569,
+      "breakEven": 9.030915948275862,
+      "after24": 743258
+    },
+    {
+      "price": 5750,
+      "scenario": "conservative",
+      "year1": 456728,
+      "breakEven": null,
+      "after24": -491755
+    },
+    {
+      "price": 5750,
+      "scenario": "base",
+      "year1": 896092,
+      "breakEven": 13.702980695495615,
+      "after24": 221363
+    },
+    {
+      "price": 5750,
+      "scenario": "upside",
+      "year1": 1210529,
+      "breakEven": 9.520869712161325,
+      "after24": 667436
+    },
+    {
+      "price": 6000,
+      "scenario": "conservative",
+      "year1": 437708,
+      "breakEven": null,
+      "after24": -512913
+    },
+    {
+      "price": 6000,
+      "scenario": "base",
+      "year1": 858758,
+      "breakEven": 14.440329512893983,
+      "after24": 170484
+    },
+    {
+      "price": 6000,
+      "scenario": "upside",
+      "year1": 1160093,
+      "breakEven": 10.011048511011927,
+      "after24": 597963
+    },
+    {
+      "price": 6250,
+      "scenario": "conservative",
+      "year1": 420198,
+      "breakEven": null,
+      "after24": -532399
+    },
+    {
+      "price": 6250,
+      "scenario": "base",
+      "year1": 824410,
+      "breakEven": 15.192004764100199,
+      "after24": 123667
+    },
+    {
+      "price": 6250,
+      "scenario": "upside",
+      "year1": 1113695,
+      "breakEven": 10.519105205660425,
+      "after24": 534052
+    },
+    {
+      "price": 6500,
+      "scenario": "conservative",
+      "year1": 404035,
+      "breakEven": null,
+      "after24": -550388
+    },
+    {
+      "price": 6500,
+      "scenario": "base",
+      "year1": 792696,
+      "breakEven": 15.960581783309692,
+      "after24": 80438
+    },
+    {
+      "price": 6500,
+      "scenario": "upside",
+      "year1": 1070859,
+      "breakEven": 11.028277176670644,
+      "after24": 475046
+    }
+  ],
+  "solar": [
+    {
+      "solarCt": 0,
+      "share": 7000,
+      "price": 616250
+    },
+    {
+      "solarCt": 0,
+      "share": 6000,
+      "price": 516715
+    },
+    {
+      "solarCt": 0,
+      "share": 5000,
+      "price": 417183
+    },
+    {
+      "solarCt": 1.5,
+      "share": 7000,
+      "price": 515258
+    },
+    {
+      "solarCt": 1.5,
+      "share": 6000,
+      "price": 430147
+    },
+    {
+      "solarCt": 1.5,
+      "share": 5000,
+      "price": 345039
+    },
+    {
+      "solarCt": 3,
+      "share": 7000,
+      "price": 414266
+    },
+    {
+      "solarCt": 3,
+      "share": 6000,
+      "price": 343579
+    },
+    {
+      "solarCt": 3,
+      "share": 5000,
+      "price": 272907
+    },
+    {
+      "solarCt": 4.5,
+      "share": 7000,
+      "price": 313262
+    },
+    {
+      "solarCt": 4.5,
+      "share": 6000,
+      "price": 257011
+    },
+    {
+      "solarCt": 4.5,
+      "share": 5000,
+      "price": 200763
+    },
+    {
+      "solarCt": 6,
+      "share": 7000,
+      "price": 212270
+    },
+    {
+      "solarCt": 6,
+      "share": 6000,
+      "price": 170455
+    },
+    {
+      "solarCt": 6,
+      "share": 5000,
+      "price": 128631
+    },
+    {
+      "solarCt": 8,
+      "share": 7000,
+      "price": 77618
+    },
+    {
+      "solarCt": 8,
+      "share": 6000,
+      "price": 55027
+    },
+    {
+      "solarCt": 8,
+      "share": 5000,
+      "price": 32439
+    }
+  ],
+  "recommended": 4250,
+  "safety": 2750,
+  "verdict5000": "MATHEMATISCH ZULÄSSIG, ABER OHNE SICHERHEITSMARGE",
+  "lines": 219
+}

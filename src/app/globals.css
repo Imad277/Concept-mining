@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+/*
+ * Concept Mining – design tokens (see docs/DESIGN_SYSTEM.md).
+ *
+ * Family resemblance to Linden Concept: Manrope (UI/headlines) · Instrument Serif
+ * (emphasis) · DM Mono (labels). Concept Mining identity: deep graphite and near
+ * black, warm white, silver, champagne metal; Bitcoin amber and energy blue only
+ * as semantic accents. Sections set a TONE (dark | deep | paper); components use
+ * semantic tokens only.
+ */
+
+:root {
+  /* ── Brand palette (raw) ───────────────────────────── */
+  --navy-950: #08090b;
+  --navy-900: #0e1013;
+  --navy-850: #111418;
+  --navy-800: #14171b;
+  --navy-700: #1c2026;
+  --slate-900: #172f3b;
+  --slate-600: #415663;
+  --slate-400: #6e7f88;
+  --cream-50: #fbfaf7;
+  --cream-100: #f7f5f0;
+  --cream-200: #f3f0e9;
+  --cream-300: #ebe5d9;
+  --gold-300: #e8d6b4;
+  --gold-400: #dcc7a3;
+  --gold-500: #dcc7a3;
+  --gold-600: #cdb894;
+  --bronze-700: #876a40;
+
+  /* ── Mining extension (semantic accents, never dominant) ── */
+  --btc-copper: #e3a04a;
+  --energy-blue: #86b6e6;
+  --solar-amber: #e8be62;
+
+  --radius-card: 26px;
+  --radius-panel: 34px;
+  --header-h: 68px;
+}
+
+/* ── Tones ─────────────────────────────────────────────
+ * Concept Mining: graphite (default) · deep (near black) · paper (warm white).
+ * Glass is layered and restrained: translucent fill, hairline light edge,
+ * soft depth, never stacked more than two levels.
+ */
+
+:root,
+[data-tone="dark"],
+[data-tone="deep"] {
+  --bg: #0e1013;
+  --bg-alt: #14171b;
+  --ink: #f3f0e8;
+  --ink-muted: #b4b8be;
+  --ink-subtle: #7f858d;
+  --line: rgb(255 255 255 / 0.085);
+  --line-strong: rgb(255 255 255 / 0.17);
+  --em: #d8c29d;
+  --eyebrow: #cdb894;
+  --link: #e8d6b4;
+  --accent: #dcc7a3;
+  --accent-ink: #0c0d0f;
+  --accent-line: rgb(220 199 163 / 0.55);
+  --card-bg: linear-gradient(160deg, rgb(255 255 255 / 0.075) 0%, rgb(255 255 255 / 0.025) 45%, rgb(255 255 255 / 0.015) 100%);
+  --card-border: rgb(255 255 255 / 0.1);
+  --card-shadow: 0 30px 70px rgb(0 0 0 / 0.38), 0 2px 6px rgb(0 0 0 / 0.25), inset 0 1px 0 rgb(255 255 255 / 0.09);
+  --inset: rgb(255 255 255 / 0.035);
+  --inset-strong: rgb(255 255 255 / 0.07);
+  --positive: #94d0ae;
+  --negative: #ea9581;
+  --status-live: #94d0ae;
+  --status-delayed: #e6bd6e;
+  --status-stale: #ee9a67;
+  --status-unavailable: #9aa1a9;
+  --data-hash: #d8c29d;
+  --data-btc: #e3a04a;
+  --data-energy: #86b6e6;
+  --data-solar: #e8be62;
+  --data-cost: #8d939b;
+  color-scheme: dark;
+}
+
+[data-tone="deep"] {
+  --bg: #08090b;
+  --bg-alt: #0e1013;
+}
+
+[data-tone="light"],
+[data-tone="paper"] {
+  --bg: #f3f0e9;
+  --bg-alt: #ebe7de;
+  --ink: #15171a;
+  --ink-muted: #474c54;
+  --ink-subtle: #767b83;
+  --line: rgb(21 23 26 / 0.1);
+  --line-strong: rgb(21 23 26 / 0.2);
+  --em: #876a40;
+  --eyebrow: #876a40;
+  --link: #6f5532;
+  --accent: #15171a;
+  --accent-ink: #f3f0e8;
+  --accent-line: rgb(21 23 26 / 0.45);
+  --card-bg: linear-gradient(160deg, rgb(255 255 255 / 0.92), rgb(250 248 243 / 0.78));
+  --card-border: rgb(255 255 255 / 0.95);
+  --card-shadow: 0 24px 60px rgb(40 36 28 / 0.12), 0 2px 6px rgb(40 36 28 / 0.06), inset 0 1px 0 #fff;
+  --inset: rgb(21 23 26 / 0.035);
+  --inset-strong: rgb(21 23 26 / 0.065);
+  --positive: #2b7653;
+  --negative: #a4432e;
+  --status-live: #2b7653;
+  --status-delayed: #94650f;
+  --status-stale: #ad531d;
+  --status-unavailable: #6b7178;
+  --data-hash: #876a40;
+  --data-btc: #b06c24;
+  --data-energy: #2f6c9f;
+  --data-solar: #b58219;
+  --data-cost: #6b7178;
+  color-scheme: light;
+}
+
+[data-tone="paper"] {
+  --bg: #f7f5f0;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-subtle: var(--ink-subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-em: var(--em);
+  --color-eyebrow: var(--eyebrow);
+  --color-link: var(--link);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-line: var(--accent-line);
+  --color-inset: var(--inset);
+  --color-inset-strong: var(--inset-strong);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-status-live: var(--status-live);
+  --color-status-delayed: var(--status-delayed);
+  --color-status-stale: var(--status-stale);
+  --color-status-unavailable: var(--status-unavailable);
+  --color-data-hash: var(--data-hash);
+  --color-data-btc: var(--data-btc);
+  --color-data-energy: var(--data-energy);
+  --color-data-solar: var(--data-solar);
+  --color-data-cost: var(--data-cost);
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
+
+  --radius-pill: 100px;
+  --radius-card: var(--radius-card);
+  --radius-panel: var(--radius-panel);
+
+  /* Type scale */
+  --text-display: clamp(2.6rem, 1.55rem + 4.2vw, 4.4rem);
+  --text-display--line-height: 1.03;
+  --text-display--letter-spacing: -0.052em;
+  --text-headline: clamp(2.2rem, 1.45rem + 3vw, 3.65rem);
+  --text-headline--line-height: 1.05;
+  --text-headline--letter-spacing: -0.048em;
+  --text-title: clamp(1.6rem, 1.25rem + 1.3vw, 2.25rem);
+  --text-title--line-height: 1.12;
+  --text-card: clamp(1.45rem, 1.25rem + 0.7vw, 1.9rem);
+  --text-card--line-height: 1.15;
+  --text-figure: clamp(1.9rem, 1.45rem + 1.6vw, 2.75rem);
+  --text-figure--line-height: 1.02;
+  --text-lead: clamp(1.05rem, 0.98rem + 0.3vw, 1.2rem);
+  --text-lead--line-height: 1.6;
+  --text-eyebrow: 0.6875rem;
+  --text-eyebrow--line-height: 1.5;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 8px);
+  }
+  body {
+    background: #0e1013;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  [data-tone] {
+    background-color: var(--bg);
+    color: var(--ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--gold-500);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: rgb(216 194 157 / 0.35);
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Mono eyebrow: "01 / DAS MODELL" */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--eyebrow);
+}
+
+/* Headline: Manrope 520 + serif emphasis line */
+@utility headline {
+  font-weight: 520;
+  color: var(--ink);
+}
+
+@utility serif-em {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.035em;
+  color: var(--em);
+}
+
+/* Glass card, tone-aware */
+@utility card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--radius-card);
+  backdrop-filter: blur(22px) saturate(120%);
+  -webkit-backdrop-filter: blur(22px) saturate(120%);
+}
+
+/* Ambient light for dark sections: two very soft glows, no gradients on content. */
+@utility ambient {
+  background-image:
+    radial-gradient(60% 50% at 85% 0%, rgb(216 194 157 / 0.07), transparent 70%),
+    radial-gradient(50% 45% at 0% 100%, rgb(134 182 230 / 0.05), transparent 70%);
+}
+
+/* Silver headline gradient – used sparingly on display headlines only. */
+@utility metal {
+  background: linear-gradient(180deg, #ffffff 0%, #e6e2d9 55%, #b9b4aa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility hairline {
+  border-color: var(--line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Range slider in brand style (track fill via --pct) */
+.lc-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  background: transparent;
+  cursor: pointer;
+}
+.lc-range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--em) 0 var(--pct, 0%), var(--line-strong) var(--pct, 0%) 100%);
+}
+.lc-range::-moz-range-track {
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--em) 0 var(--pct, 0%), var(--line-strong) var(--pct, 0%) 100%);
+}
+.lc-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--em), 0 6px 16px rgb(8 29 41 / 0.25);
+}
+.lc-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--em);
+}
+
+/* ── Concept Mining motion ─────────────────────────────
+ * Flow lines move slowly (energy/compute direction), LEDs breathe.
+ * All of it stops under prefers-reduced-motion (rule above).
+ */
+.cm-flow {
+  stroke-dasharray: 6 9;
+  animation: cm-dash 2.4s linear infinite;
+}
+.cm-flow-slow {
+  animation-duration: 3.6s;
+}
+@keyframes cm-dash {
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+.cm-led {
+  animation: cm-breathe 2.8s ease-in-out infinite;
+}
+@keyframes cm-breathe {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.cm-rise {
+  animation: cm-rise 700ms var(--ease-standard) both;
+}
+@keyframes cm-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cm-flow, .cm-led { animation: none !important; }
+}

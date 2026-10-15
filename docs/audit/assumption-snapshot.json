@@ -1,0 +1,206 @@
+{
+  "snapshot": "2026-10-14T19:16:46.063Z",
+  "simulationDefaults": {
+    "capexPerPh": {
+      "value": 450000,
+      "status": "DERIVED",
+      "source": "Capacity-Pricing-Audit 14.10.2026 (Empfehlung)",
+      "asOf": "2026-10-14",
+      "note": "Empfohlener kommerzieller Preis je PH/s; Freigabe durch Concept Mining ausstehend."
+    },
+    "capexIncludesSolar": false,
+    "hardware": {
+      "id": "hydro-fleet",
+      "basis": "GENERIC_FLEET",
+      "status": "CONFIRMED",
+      "label": "Hydro-Miner-Flotte, 10–12 J/TH (Angabe Concept Mining, Modell noch nicht benannt)",
+      "manufacturer": null,
+      "model": null,
+      "hashrateTh": null,
+      "powerWatts": null,
+      "efficiencyJPerTh": 11,
+      "purchaseCost": null,
+      "deploymentCost": null,
+      "expectedAvailabilityBps": null,
+      "sourceDate": "2026-10-09"
+    },
+    "poolFeeBps": {
+      "value": 200,
+      "status": "PLACEHOLDER",
+      "source": "config/operations.ts",
+      "asOf": null,
+      "note": "Typical FPPS pool fee range 1.5–2.5 %; pool not yet selected."
+    },
+    "platformFeeBps": {
+      "value": null,
+      "status": "PLACEHOLDER",
+      "source": "config/operations.ts",
+      "asOf": null,
+      "note": "Linden fee model not yet defined."
+    },
+    "maintenanceCostPerPhMonth": {
+      "value": 1500,
+      "status": "PLACEHOLDER",
+      "source": "config/operations.ts",
+      "asOf": null,
+      "note": "Repairs, spare parts, firmware per PH per month."
+    },
+    "operationsCostPerPhMonth": {
+      "value": 6000,
+      "status": "PLACEHOLDER",
+      "source": "config/operations.ts",
+      "asOf": null,
+      "note": "Staff, monitoring, insurance, connectivity, security per PH per month."
+    },
+    "energy": {
+      "solarShareBps": {
+        "value": 7000,
+        "status": "PLACEHOLDER",
+        "source": "Angabe Concept Mining",
+        "asOf": null,
+        "note": "Modellwert = angegebene Obergrenze „bis zu 70 %“; verifiziertes Jahresmittel liegt nicht vor."
+      },
+      "solarCostPerKwh": {
+        "value": 1.5,
+        "status": "CONFIRMED",
+        "source": "Angabe Concept Mining",
+        "asOf": "2026-10-09",
+        "note": "Laufende Betriebskosten der bestehenden Solarparks; Angabe 1–2 ct/kWh, Mittelwert."
+      },
+      "solarCostBasis": "OPEX_ONLY",
+      "gridCostPerKwh": {
+        "value": 11,
+        "status": "CONFIRMED",
+        "source": "Angabe Concept Mining",
+        "asOf": "2026-10-09",
+        "note": "Netzstrom für die übrigen ca. 30 % inkl. Entgelte, Umlagen, Stromsteuer; Angabe 10–12 ct/kWh, Mittelwert."
+      },
+      "pue": {
+        "value": 1.05,
+        "status": "CONFIRMED",
+        "source": "Angabe Concept Mining",
+        "asOf": "2026-10-09",
+        "note": "Wassergekühlte (Hydro-)Miner."
+      }
+    },
+    "primaryRevenueMode": "HASHPRICE",
+    "modeDeviationWarningBps": 1000,
+    "scenarioConsistencyToleranceBps": 300,
+    "investmentLimits": {
+      "min": 500000,
+      "max": 5000000,
+      "step": 50000
+    },
+    "projection": {
+      "horizonMonths": 24,
+      "hardwareLifetimeMonths": 24,
+      "dispatch": "SOLAR_FIRST"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "conservative",
+      "name": "Konservativ",
+      "description": "Niedrigerer BTC-Preis, höhere Difficulty, höherer Netzstrompreis und geringere Verfügbarkeit als heute.",
+      "status": "PLACEHOLDER",
+      "btcPriceMultiplierBps": 8000,
+      "difficultyMultiplierBps": 11500,
+      "hashpriceMultiplierBps": 6957,
+      "energyMultiplierBps": 11500,
+      "uptimeBps": 9200,
+      "monthlyDifficultyGrowthBps": 300
+    },
+    {
+      "id": "base",
+      "name": "Marktbasis",
+      "description": "Heutige Marktwerte werden konstant gehalten; die Netzwerk-Difficulty steigt weiter.",
+      "status": "PLACEHOLDER",
+      "btcPriceMultiplierBps": 10000,
+      "difficultyMultiplierBps": 10000,
+      "hashpriceMultiplierBps": 10000,
+      "energyMultiplierBps": 10000,
+      "uptimeBps": 9500,
+      "monthlyDifficultyGrowthBps": 200
+    },
+    {
+      "id": "upside",
+      "name": "Chance",
+      "description": "Höherer BTC-Preis bei moderat höherer Difficulty und heutigem Netzstrompreis.",
+      "status": "PLACEHOLDER",
+      "btcPriceMultiplierBps": 12500,
+      "difficultyMultiplierBps": 10500,
+      "hashpriceMultiplierBps": 11905,
+      "energyMultiplierBps": 10000,
+      "uptimeBps": 9600,
+      "monthlyDifficultyGrowthBps": 200
+    }
+  ],
+  "operatorAssumptions": {
+    "solarValueCtPerKwh": {
+      "value": 4.5,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Opportunitätswert Solarstrom; Einspeiseerlös der Parks durch Concept Mining zu beziffern."
+    },
+    "adminPerPhMonth": {
+      "value": 500,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Verwaltung je PH/s und Monat."
+    },
+    "supportPerPhMonth": {
+      "value": 300,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Anlegerbetreuung je PH/s und Monat."
+    },
+    "acquisitionBps": {
+      "value": 500,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Vertrieb/Akquise in % des eingeworbenen Kapitals."
+    },
+    "paymentBps": {
+      "value": 100,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Zahlungsverkehr/Plattform in % des eingeworbenen Kapitals."
+    },
+    "discountRateBps": {
+      "value": 800,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Kapitalkosten Linden p. a. für Barwertvergleich."
+    },
+    "totalCapacityPh": {
+      "value": null,
+      "status": "PLACEHOLDER",
+      "source": "config/operator.ts",
+      "asOf": null,
+      "note": "Gesamtkapazität der Flotte – nicht angegeben."
+    }
+  },
+  "pendingRetarget": {
+    "changeBps": 610,
+    "monthIndex": 0
+  },
+  "halving": {
+    "height": 1050000,
+    "estimatedDate": "2028-03-12T05:10:13.643Z",
+    "subsidyAfterSats": 156250000,
+    "monthIndex": 16
+  },
+  "term": 24,
+  "candidates": [
+    4250,
+    4500,
+    4750,
+    5000
+  ]
+}

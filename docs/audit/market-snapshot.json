@@ -1,0 +1,83 @@
+{
+  "btcPriceUsd": {
+    "value": 8173300,
+    "source": "coingecko",
+    "observedAt": "2026-10-14T19:16:36.000Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "btcPriceEur": {
+    "value": 7327400,
+    "source": "coingecko",
+    "observedAt": "2026-10-14T19:16:36.000Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "networkDifficulty": {
+    "value": 132716002350731.3,
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "networkHashrate": {
+    "value": 1.013748982000973e+21,
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "hashpriceUsdPerPhDay": {
+    "value": 38.90560124748535,
+    "source": "derived:coingecko+mempool.space",
+    "observedAt": "2026-10-14T19:16:36.000Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "blockHeight": {
+    "value": 971452,
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "blockRewardSats": {
+    "value": 312500000,
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "avgFeesPerBlockSats": {
+    "value": 1539373,
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "nextDifficultyAdjustment": {
+    "value": {
+      "estimatedDate": "2026-10-16T12:08:40.100Z",
+      "estimatedChangeBps": 610,
+      "remainingBlocks": 260
+    },
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "nextHalving": {
+    "value": {
+      "height": 1050000,
+      "estimatedDate": "2028-03-12T05:10:13.643Z",
+      "subsidyAfterSats": 156250000
+    },
+    "source": "mempool.space",
+    "observedAt": "2026-10-14T19:16:46.063Z",
+    "fallback": false,
+    "freshness": "LIVE"
+  },
+  "timestamp": "2026-10-14T19:16:46.063Z",
+  "stale": false,
+  "_note": "hashpriceUsdPerPhDay re-derived on 2026-10-14 from the SAME raw values with the corrected spot formula (current difficulty instead of 3-day hashrate estimate). Previous value: 36.45974295604618"
+}

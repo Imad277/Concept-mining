@@ -1,0 +1,700 @@
+{
+  "snapshot": "2026-10-14T19:16:46.063Z",
+  "logic": {
+    "spotFromDifficulty": 38.90560124748535,
+    "fromEstimate": 36.45974295604618,
+    "pending": {
+      "changeBps": 610,
+      "monthIndex": 0
+    },
+    "halvingIdx": 16,
+    "rewardFactor": 0.5024509235661988
+  },
+  "investor": [
+    {
+      "price": 4250,
+      "scenario": "Konservativ",
+      "pkg": 5000,
+      "be": null,
+      "cum24": 343840,
+      "profit": -156160,
+      "ret": -0.31232
+    },
+    {
+      "price": 4250,
+      "scenario": "Konservativ",
+      "pkg": 10000,
+      "be": null,
+      "cum24": 687680,
+      "profit": -312320,
+      "ret": -0.31232
+    },
+    {
+      "price": 4250,
+      "scenario": "Konservativ",
+      "pkg": 25000,
+      "be": null,
+      "cum24": 1719200.0000000002,
+      "profit": -780800,
+      "ret": -0.31232
+    },
+    {
+      "price": 4250,
+      "scenario": "Konservativ",
+      "pkg": 50000,
+      "be": null,
+      "cum24": 3438400.0000000005,
+      "profit": -1561600,
+      "ret": -0.31232
+    },
+    {
+      "price": 4250,
+      "scenario": "Marktbasis",
+      "pkg": 5000,
+      "be": 9.58208916604135,
+      "cum24": 826228.2352941177,
+      "profit": 326228.23529411765,
+      "ret": 0.6524564705882353
+    },
+    {
+      "price": 4250,
+      "scenario": "Marktbasis",
+      "pkg": 10000,
+      "be": 9.58208916604135,
+      "cum24": 1652456.4705882354,
+      "profit": 652456.4705882353,
+      "ret": 0.6524564705882353
+    },
+    {
+      "price": 4250,
+      "scenario": "Marktbasis",
+      "pkg": 25000,
+      "be": 9.58208916604135,
+      "cum24": 4131141.1764705884,
+      "profit": 1631141.1764705884,
+      "ret": 0.6524564705882353
+    },
+    {
+      "price": 4250,
+      "scenario": "Marktbasis",
+      "pkg": 50000,
+      "be": 9.58208916604135,
+      "cum24": 8262282.352941177,
+      "profit": 3262282.352941177,
+      "ret": 0.6524564705882353
+    },
+    {
+      "price": 4250,
+      "scenario": "Upside",
+      "pkg": 5000,
+      "be": 6.7238992603029235,
+      "cum24": 1127983.5294117648,
+      "profit": 627983.5294117647,
+      "ret": 1.2559670588235294
+    },
+    {
+      "price": 4250,
+      "scenario": "Upside",
+      "pkg": 10000,
+      "be": 6.7238992603029235,
+      "cum24": 2255967.0588235296,
+      "profit": 1255967.0588235294,
+      "ret": 1.2559670588235294
+    },
+    {
+      "price": 4250,
+      "scenario": "Upside",
+      "pkg": 25000,
+      "be": 6.7238992603029235,
+      "cum24": 5639917.647058824,
+      "profit": 3139917.6470588236,
+      "ret": 1.2559670588235294
+    },
+    {
+      "price": 4250,
+      "scenario": "Upside",
+      "pkg": 50000,
+      "be": 6.7238992603029235,
+      "cum24": 11279835.294117648,
+      "profit": 6279835.294117647,
+      "ret": 1.2559670588235294
+    },
+    {
+      "price": 4500,
+      "scenario": "Konservativ",
+      "pkg": 5000,
+      "be": null,
+      "cum24": 324737.7777777778,
+      "profit": -175262.22222222222,
+      "ret": -0.35052444444444447
+    },
+    {
+      "price": 4500,
+      "scenario": "Konservativ",
+      "pkg": 10000,
+      "be": null,
+      "cum24": 649475.5555555556,
+      "profit": -350524.44444444444,
+      "ret": -0.35052444444444447
+    },
+    {
+      "price": 4500,
+      "scenario": "Konservativ",
+      "pkg": 25000,
+      "be": null,
+      "cum24": 1623688.8888888888,
+      "profit": -876311.1111111111,
+      "ret": -0.35052444444444447
+    },
+    {
+      "price": 4500,
+      "scenario": "Konservativ",
+      "pkg": 50000,
+      "be": null,
+      "cum24": 3247377.7777777775,
+      "profit": -1752622.2222222222,
+      "ret": -0.35052444444444447
+    },
+    {
+      "price": 4500,
+      "scenario": "Marktbasis",
+      "pkg": 5000,
+      "be": 10.235483527595933,
+      "cum24": 780326.6666666667,
+      "profit": 280326.6666666667,
+      "ret": 0.5606533333333333
+    },
+    {
+      "price": 4500,
+      "scenario": "Marktbasis",
+      "pkg": 10000,
+      "be": 10.235483527595933,
+      "cum24": 1560653.3333333335,
+      "profit": 560653.3333333334,
+      "ret": 0.5606533333333333
+    },
+    {
+      "price": 4500,
+      "scenario": "Marktbasis",
+      "pkg": 25000,
+      "be": 10.235483527595933,
+      "cum24": 3901633.333333333,
+      "profit": 1401633.3333333333,
+      "ret": 0.5606533333333333
+    },
+    {
+      "price": 4500,
+      "scenario": "Marktbasis",
+      "pkg": 50000,
+      "be": 10.235483527595933,
+      "cum24": 7803266.666666666,
+      "profit": 2803266.6666666665,
+      "ret": 0.5606533333333333
+    },
+    {
+      "price": 4500,
+      "scenario": "Upside",
+      "pkg": 5000,
+      "be": 7.170037753743457,
+      "cum24": 1065317.7777777778,
+      "profit": 565317.7777777778,
+      "ret": 1.1306355555555556
+    },
+    {
+      "price": 4500,
+      "scenario": "Upside",
+      "pkg": 10000,
+      "be": 7.170037753743457,
+      "cum24": 2130635.5555555555,
+      "profit": 1130635.5555555555,
+      "ret": 1.1306355555555556
+    },
+    {
+      "price": 4500,
+      "scenario": "Upside",
+      "pkg": 25000,
+      "be": 7.170037753743457,
+      "cum24": 5326588.888888889,
+      "profit": 2826588.888888889,
+      "ret": 1.1306355555555556
+    },
+    {
+      "price": 4500,
+      "scenario": "Upside",
+      "pkg": 50000,
+      "be": 7.170037753743457,
+      "cum24": 10653177.777777778,
+      "profit": 5653177.777777778,
+      "ret": 1.1306355555555556
+    },
+    {
+      "price": 4750,
+      "scenario": "Konservativ",
+      "pkg": 5000,
+      "be": null,
+      "cum24": 307646.31578947365,
+      "profit": -192353.6842105263,
+      "ret": -0.38470736842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Konservativ",
+      "pkg": 10000,
+      "be": null,
+      "cum24": 615292.6315789473,
+      "profit": -384707.3684210526,
+      "ret": -0.38470736842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Konservativ",
+      "pkg": 25000,
+      "be": null,
+      "cum24": 1538231.5789473685,
+      "profit": -961768.4210526317,
+      "ret": -0.38470736842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Konservativ",
+      "pkg": 50000,
+      "be": null,
+      "cum24": 3076463.157894737,
+      "profit": -1923536.8421052634,
+      "ret": -0.38470736842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Marktbasis",
+      "pkg": 5000,
+      "be": 10.900766405875778,
+      "cum24": 739256.8421052631,
+      "profit": 239256.84210526315,
+      "ret": 0.4785136842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Marktbasis",
+      "pkg": 10000,
+      "be": 10.900766405875778,
+      "cum24": 1478513.6842105263,
+      "profit": 478513.6842105263,
+      "ret": 0.4785136842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Marktbasis",
+      "pkg": 25000,
+      "be": 10.900766405875778,
+      "cum24": 3696284.210526316,
+      "profit": 1196284.210526316,
+      "ret": 0.4785136842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Marktbasis",
+      "pkg": 50000,
+      "be": 10.900766405875778,
+      "cum24": 7392568.421052632,
+      "profit": 2392568.421052632,
+      "ret": 0.4785136842105263
+    },
+    {
+      "price": 4750,
+      "scenario": "Upside",
+      "pkg": 5000,
+      "be": 7.626000838972077,
+      "cum24": 1009248.4210526316,
+      "profit": 509248.4210526316,
+      "ret": 1.0184968421052631
+    },
+    {
+      "price": 4750,
+      "scenario": "Upside",
+      "pkg": 10000,
+      "be": 7.626000838972077,
+      "cum24": 2018496.8421052631,
+      "profit": 1018496.8421052631,
+      "ret": 1.0184968421052631
+    },
+    {
+      "price": 4750,
+      "scenario": "Upside",
+      "pkg": 25000,
+      "be": 7.626000838972077,
+      "cum24": 5046242.105263159,
+      "profit": 2546242.105263158,
+      "ret": 1.0184968421052631
+    },
+    {
+      "price": 4750,
+      "scenario": "Upside",
+      "pkg": 50000,
+      "be": 7.626000838972077,
+      "cum24": 10092484.210526317,
+      "profit": 5092484.210526316,
+      "ret": 1.0184968421052631
+    },
+    {
+      "price": 5000,
+      "scenario": "Konservativ",
+      "pkg": 5000,
+      "be": null,
+      "cum24": 292264,
+      "profit": -207736,
+      "ret": -0.415472
+    },
+    {
+      "price": 5000,
+      "scenario": "Konservativ",
+      "pkg": 10000,
+      "be": null,
+      "cum24": 584528,
+      "profit": -415472,
+      "ret": -0.415472
+    },
+    {
+      "price": 5000,
+      "scenario": "Konservativ",
+      "pkg": 25000,
+      "be": null,
+      "cum24": 1461320,
+      "profit": -1038680,
+      "ret": -0.415472
+    },
+    {
+      "price": 5000,
+      "scenario": "Konservativ",
+      "pkg": 50000,
+      "be": null,
+      "cum24": 2922640,
+      "profit": -2077360,
+      "ret": -0.415472
+    },
+    {
+      "price": 5000,
+      "scenario": "Marktbasis",
+      "pkg": 5000,
+      "be": 11.582304470420762,
+      "cum24": 702294,
+      "profit": 202294,
+      "ret": 0.404588
+    },
+    {
+      "price": 5000,
+      "scenario": "Marktbasis",
+      "pkg": 10000,
+      "be": 11.582304470420762,
+      "cum24": 1404588,
+      "profit": 404588,
+      "ret": 0.404588
+    },
+    {
+      "price": 5000,
+      "scenario": "Marktbasis",
+      "pkg": 25000,
+      "be": 11.582304470420762,
+      "cum24": 3511470,
+      "profit": 1011470,
+      "ret": 0.404588
+    },
+    {
+      "price": 5000,
+      "scenario": "Marktbasis",
+      "pkg": 50000,
+      "be": 11.582304470420762,
+      "cum24": 7022940,
+      "profit": 2022940,
+      "ret": 0.404588
+    },
+    {
+      "price": 5000,
+      "scenario": "Upside",
+      "pkg": 5000,
+      "be": 8.084927054199108,
+      "cum24": 958786,
+      "profit": 458786,
+      "ret": 0.917572
+    },
+    {
+      "price": 5000,
+      "scenario": "Upside",
+      "pkg": 10000,
+      "be": 8.084927054199108,
+      "cum24": 1917572,
+      "profit": 917572,
+      "ret": 0.917572
+    },
+    {
+      "price": 5000,
+      "scenario": "Upside",
+      "pkg": 25000,
+      "be": 8.084927054199108,
+      "cum24": 4793930,
+      "profit": 2293930,
+      "ret": 0.917572
+    },
+    {
+      "price": 5000,
+      "scenario": "Upside",
+      "pkg": 50000,
+      "be": 8.084927054199108,
+      "cum24": 9587860,
+      "profit": 4587860,
+      "ret": 0.917572
+    }
+  ],
+  "solar": [
+    {
+      "sv": 1.5,
+      "sh": 5000,
+      "t1": -25605.688124999986,
+      "t2": -25605.688124999986,
+      "be1": null,
+      "be2": null
+    },
+    {
+      "sv": 1.5,
+      "sh": 6000,
+      "t1": -150303.3115,
+      "t2": -150303.3115,
+      "be1": 13.543817779805567,
+      "be2": 13.543817779805567
+    },
+    {
+      "sv": 1.5,
+      "sh": 7000,
+      "t1": -274997.934875,
+      "t2": -274997.934875,
+      "be1": 10.900766405875778,
+      "be2": 10.900766405875778
+    },
+    {
+      "sv": 3,
+      "sh": 5000,
+      "t1": -25619.09062500007,
+      "t2": 118644.90937499999,
+      "be1": null,
+      "be2": null
+    },
+    {
+      "sv": 3,
+      "sh": 6000,
+      "t1": -150300.19450000004,
+      "t2": 22835.80549999996,
+      "be1": 13.543817779805567,
+      "be2": null
+    },
+    {
+      "sv": 3,
+      "sh": 7000,
+      "t1": -275002.29837499995,
+      "t2": -73018.29837499995,
+      "be1": 10.900766405875778,
+      "be2": 14.301857461734693
+    },
+    {
+      "sv": 4.5,
+      "sh": 5000,
+      "t1": -42506.49312500004,
+      "t2": 246042.909375,
+      "be1": null,
+      "be2": null
+    },
+    {
+      "sv": 4.5,
+      "sh": 6000,
+      "t1": -170574.07749999984,
+      "t2": 175694.80550000002,
+      "be1": 13.543817779805567,
+      "be2": null
+    },
+    {
+      "sv": 4.5,
+      "sh": 7000,
+      "t1": -298642.661875,
+      "t2": 105345.70162499999,
+      "be1": 10.900766405875778,
+      "be2": null
+    },
+    {
+      "sv": 6,
+      "sh": 5000,
+      "t1": -90607.89562500024,
+      "t2": 342209.974375,
+      "be1": null,
+      "be2": null
+    },
+    {
+      "sv": 6,
+      "sh": 6000,
+      "t1": -228298.96050000004,
+      "t2": 291088.88349999994,
+      "be1": 13.543817779805567,
+      "be2": null
+    },
+    {
+      "sv": 6,
+      "sh": 7000,
+      "t1": -365975.02537499997,
+      "t2": 239998.792625,
+      "be1": 10.900766405875778,
+      "be2": null
+    }
+  ],
+  "floors": {
+    "floorBase": 792704.9594414894,
+    "floorBasePv": 747481.463881186,
+    "floorModPv": 515370.2068554409
+  },
+  "models": [
+    {
+      "name": "A – nur Kapazitätspreis",
+      "price": 475000,
+      "be": 10.900766405875778,
+      "deltaBase": -298642.661875,
+      "deltaMod": -67375.58639999997
+    },
+    {
+      "name": "A – nur Kapazitätspreis",
+      "price": 500000,
+      "be": 11.582304470420762,
+      "deltaBase": -275142.661875,
+      "deltaMod": -43875.58639999997
+    },
+    {
+      "name": "B – Preis + 5 % Brutto",
+      "price": 425000,
+      "be": 10.491147522167063,
+      "deltaBase": -289042.9476249999,
+      "deltaMod": -73156.58639999997
+    },
+    {
+      "name": "B – Preis + 10 % Brutto",
+      "price": 400000,
+      "be": 10.70575049036396,
+      "deltaBase": -258790.09049999993,
+      "deltaMod": -55437.58639999997
+    },
+    {
+      "name": "C – Preis + 20 % positives Netto",
+      "price": 425000,
+      "be": 12.450466184051153,
+      "deltaBase": -205183.86187499994,
+      "deltaMod": -22328.7864000001
+    },
+    {
+      "name": "C – Preis + 30 % positives Netto",
+      "price": 400000,
+      "be": 13.59925697056046,
+      "deltaBase": -158454.46187499995,
+      "deltaMod": 194.6135999999533
+    }
+  ],
+  "scores": [
+    {
+      "price": 4250,
+      "investorAttractiveness": 7,
+      "breakEvenResilience": 9,
+      "investorOutcome24": 5,
+      "lindenContribution": 1,
+      "lindenOpportunity": 2,
+      "downsideResilience": 7,
+      "salesSimplicity": 4,
+      "communicationSimplicity": 4,
+      "raw": {
+        "baseReturn": 0.6524564705882353,
+        "margin": 0.17517049711018556,
+        "modReturn": 0.08290352941176471,
+        "caseB": -23680.66187499999,
+        "delta": -345642.661875,
+        "passShare": 0.7,
+        "decimals": 3,
+        "beBase": 9.58208916604135,
+        "beMod": 15.175725472132658
+      },
+      "total": 39
+    },
+    {
+      "price": 4500,
+      "investorAttractiveness": 6,
+      "breakEvenResilience": 7,
+      "investorOutcome24": 4,
+      "lindenContribution": 1,
+      "lindenOpportunity": 3,
+      "downsideResilience": 7,
+      "salesSimplicity": 4,
+      "communicationSimplicity": 2,
+      "raw": {
+        "baseReturn": 0.5606533333333333,
+        "margin": 0.1266511145872553,
+        "modReturn": 0.022742222222222223,
+        "caseB": -180.6618749999907,
+        "delta": -322142.661875,
+        "passShare": 0.7,
+        "decimals": 3,
+        "beBase": 10.235483527595933,
+        "beMod": 18.28921568627451
+      },
+      "total": 34
+    },
+    {
+      "price": 4750,
+      "investorAttractiveness": 5,
+      "breakEvenResilience": 5,
+      "investorOutcome24": 4,
+      "lindenContribution": 1,
+      "lindenOpportunity": 3,
+      "downsideResilience": 6,
+      "salesSimplicity": 4,
+      "communicationSimplicity": 1,
+      "raw": {
+        "baseReturn": 0.4785136842105263,
+        "margin": 0.07813173206432504,
+        "modReturn": -0.031086315789473684,
+        "caseB": 23319.33812500001,
+        "delta": -298642.661875,
+        "passShare": 0.6,
+        "decimals": 3,
+        "beBase": 10.900766405875778,
+        "beMod": null
+      },
+      "total": 29
+    },
+    {
+      "price": 5000,
+      "investorAttractiveness": 5,
+      "breakEvenResilience": 2,
+      "investorOutcome24": 3,
+      "lindenContribution": 1,
+      "lindenOpportunity": 4,
+      "downsideResilience": 6,
+      "salesSimplicity": 10,
+      "communicationSimplicity": 1,
+      "raw": {
+        "baseReturn": 0.404588,
+        "margin": 0.029612349541394783,
+        "modReturn": -0.079532,
+        "caseB": 46819.33812500001,
+        "delta": -275142.661875,
+        "passShare": 0.5,
+        "decimals": 0,
+        "beBase": 11.582304470420762,
+        "beMod": null
+      },
+      "total": 32
+    }
+  ],
+  "final": {
+    "technical": 515258,
+    "investorFriendly": 4250,
+    "lindenFloor": 5250,
+    "recommended": 4500,
+    "premium": 5000,
+    "eligible": [
+      4250,
+      4500
+    ]
+  },
+  "technical": 515258
+}
