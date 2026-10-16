@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { faq } from "@/content/faq.de";
-import { capacity, company, energy, finalCta, howBitcoin, infrastructure, model, operations, scenarios, simulation, transparency, treasury } from "@/content/site.de";
+import { capacity, company, energy, finalCta, howBitcoin, infrastructure, model, operations, packages, scenarios, simulation, transparency, treasury } from "@/content/site.de";
 import { CapacityFlow } from "@/features/cm/CapacityFlow";
 import { EnergyMixInteractive } from "@/features/cm/EnergyMixInteractive";
 import { Hero } from "@/features/cm/Hero";
@@ -10,6 +10,7 @@ import { HowBitcoin } from "@/features/cm/HowBitcoin";
 import { InfrastructureMap } from "@/features/cm/InfrastructureMap";
 import { ModelChain } from "@/features/cm/ModelChain";
 import { Operations } from "@/features/cm/Operations";
+import { PackageGrid } from "@/features/cm/PackageGrid";
 import { ScenarioCards } from "@/features/cm/ScenarioCards";
 import { Simulator } from "@/features/cm/Simulator";
 import { TreasurySection } from "@/features/cm/TreasurySection";
@@ -39,6 +40,9 @@ export default async function HomePage() {
     <LiveMarketProvider initial={snapshot}>
       <SimulationStateProvider>
         <Hero />
+        <Section id="pakete" tone="dark" label={packages.label} title={packages.title} titleEm={packages.titleEm} intro={<p>{packages.intro}</p>} size="md">
+          <PackageGrid />
+        </Section>
         <Section id="modell" tone="dark" number={model.number} label={model.label} title={model.title} titleEm={model.titleEm} intro={<p>{model.intro}</p>}>
           <ModelChain />
         </Section>

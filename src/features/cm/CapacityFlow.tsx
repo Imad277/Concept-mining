@@ -30,7 +30,7 @@ export function CapacityFlow() {
       <div className="card rounded-[var(--radius-panel)] p-5 md:p-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="eyebrow !text-ink-subtle">Beispielbetrag</p>
-          <div className="grid w-full grid-cols-4 gap-1.5 sm:flex sm:w-auto" role="group" aria-label="Beispielbetrag wählen">
+          <div className="flex w-full flex-wrap gap-1.5 sm:w-auto" role="group" aria-label="Beispielbetrag wählen">
             {investmentPackages.map((p) => (
               <button key={p.id} type="button" aria-pressed={p.amount === amount}
                 onClick={() => { setAmount(p.amount); track({ name: "investment_amount_selected", amountBucket: amountBucket(p.amount) }); }}

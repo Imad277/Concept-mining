@@ -28,8 +28,19 @@ export const hero = {
     "Concept Mining betreibt ein eigenes Mining-Rechenzentrum, versorgt mit Energie aus eigenen Solarparks und dem Netz. Sie beteiligen sich an einem definierten Teil seiner Rechenleistung – ohne selbst Hardware zu kaufen, zu betreiben oder zu warten.",
   primaryCta: "Investment berechnen",
   secondaryCta: "So funktioniert Concept Mining",
-  micro: "Investmentmodell ab 5.000 € · Laufzeit 24 Monate",
+  micro: "Investmentmodell ab 500 € · Laufzeit 24 Monate",
   visualCaption: "Energie → Rechenzentrum → Rechenleistung → Bitcoin-Netzwerk",
+};
+
+export const packages = {
+  label: "Investmentpakete",
+  title: "Wählen Sie Ihre",
+  titleEm: "Mining-Kapazität.",
+  intro: "Jedes Paket entspricht einem festen Teil unserer Rechenleistung. Preis je Rechenleistung, Laufzeit und Modell sind für alle Pakete gleich – nur der Umfang unterscheidet sich.",
+  online: "Komplett online",
+  talk: "Online oder mit persönlichem Gespräch",
+  cta: "Paket simulieren",
+  resultLabel: "Modelliertes Ergebnis nach 24 Monaten",
 };
 
 export const model = {

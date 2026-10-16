@@ -18,12 +18,16 @@ describe("business configuration", () => {
     const months = investmentPackages.map((p) => runSimulation({ investmentAmount: p.amount, market: fixtureMarket(), scenario: scenarios[1]!, defaults: simulationDefaults }, { now: FIXTURE_NOW }).projection!.breakEven.months);
     for (const m of months) expect(m).toBeCloseTo(months[0]!, 3);
   });
+  it("minimum amount equals the bond's minimum subscription (500 €)", () => {
+    expect(investmentLimits.min).toBe(500_00);
+  });
   it("participation term is 24 months", () => {
     expect(simulationDefaults.projection.horizonMonths).toBe(24);
     expect(simulationDefaults.projection.hardwareLifetimeMonths).toBe(24);
   });
-  it("packages are Capacity 5/10/25/50 at €5k/€10k/€25k/€50k", () => {
+  it("packages are Starter/Capacity 5/10/25/50 at €500/€5k/€10k/€25k/€50k", () => {
     expect(investmentPackages.map((p) => [p.id, p.amount])).toEqual([
+      ["starter", 500_00],
       ["capacity-5", 5_000_00],
       ["capacity-10", 10_000_00],
       ["capacity-25", 25_000_00],

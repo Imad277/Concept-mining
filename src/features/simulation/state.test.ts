@@ -10,7 +10,7 @@ describe("calculator URL state", () => {
     expect(parse({})).toEqual({ amount: 10_000_00, scenarioId: "current", overrides: {}, treasury: null });
   });
   it("clamps and snaps the amount", () => {
-    expect(parse({ a: "1000" }).amount).toBe(5_000_00);
+    expect(parse({ a: "100" }).amount).toBe(500_00);
     expect(parse({ a: "999999" }).amount).toBe(50_000_00);
     expect(parse({ a: "12345" }).amount).toBe(12_500_00);
   });

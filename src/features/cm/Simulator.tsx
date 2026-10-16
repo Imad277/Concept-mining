@@ -71,11 +71,11 @@ export function Simulator() {
             min={investmentLimits.min / 100} max={investmentLimits.max / 100} step={investmentLimits.step / 100} value={amount / 100} aria-valuetext={formatEur(amount)}
             onChange={(e) => choose(normalizeInvestmentAmount(eurToCents(Number(e.target.value)), investmentLimits))} />
           <div className="mt-1 flex justify-between font-mono text-[11px] text-ink-subtle"><span>{formatEur(investmentLimits.min)}</span><span>{formatEur(investmentLimits.max)}</span></div>
-          <div className="mt-6 grid grid-cols-4 gap-1.5" role="group" aria-label="Betrag wählen">
+          <div className="mt-6 grid grid-cols-5 gap-1.5" role="group" aria-label="Betrag wählen">
             {investmentPackages.map((p) => (
               <button key={p.id} type="button" aria-pressed={p.amount === amount} onClick={() => choose(p.amount)}
                 className={cn("tabular min-h-11 rounded-pill border text-[13px] font-semibold transition-colors", p.amount === amount ? "border-transparent bg-accent text-accent-ink" : "border-line-strong text-ink-muted hover:text-ink")}>
-                {(p.amount / 100_000).toLocaleString("de-DE")}k
+                {p.amount < 1_000_00 ? `${p.amount / 100} €` : `${(p.amount / 100_000).toLocaleString("de-DE")}k`}
               </button>
             ))}
           </div>
