@@ -98,3 +98,21 @@ describe("MODE B — network probability", () => {
     expect(a.grossSatsPerDay).toBeCloseTo(b.grossSatsPerDay, 6);
   });
 });
+
+describe("plausibleBlockTimeMs", () => {
+  it("keeps a normal smoothed block time", async () => {
+    const { plausibleBlockTimeMs } = await import("./network");
+    expect(plausibleBlockTimeMs(589_550)).toBe(589_550);
+  });
+  it("caps an epoch average distorted right after a retarget (16.10.2026: 27.7 min)", async () => {
+    const { plausibleBlockTimeMs, estimateDateForHeight } = await import("./network");
+    expect(plausibleBlockTimeMs(1_663_000)).toBe(660_000);
+    // 78,286 blocks to the 2028 halving must not be projected into 2030
+    const d = new Date(estimateDateForHeight(971_714, 1_050_000, plausibleBlockTimeMs(1_663_000), Date.UTC(2026, 9, 16)));
+    expect(d.getUTCFullYear()).toBe(2028);
+  });
+  it("falls back to 600 s without data", async () => {
+    const { plausibleBlockTimeMs } = await import("./network");
+    expect(plausibleBlockTimeMs(undefined)).toBe(600_000);
+  });
+});

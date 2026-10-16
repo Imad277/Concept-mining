@@ -35,6 +35,18 @@ export function estimateDateForHeight(
   return new Date(nowMs + remaining * avgBlockTimeMs).toISOString();
 }
 
+/**
+ * Block time to extrapolate far-away heights (e.g. the next halving).
+ * Right after a retarget the epoch average rests on a handful of blocks and can
+ * be far off (27 min observed on 16.10.2026). Over tens of thousands of blocks
+ * the difficulty pulls the network back to 600 s, so the measured value is only
+ * used within a plausible band of 540–660 s.
+ */
+export function plausibleBlockTimeMs(measuredMs: number | null | undefined): number {
+  if (measuredMs === null || measuredMs === undefined || !Number.isFinite(measuredMs) || measuredMs <= 0) return 600_000;
+  return Math.min(660_000, Math.max(540_000, measuredMs));
+}
+
 /** Network hashrate implied by difficulty: H = D × 2^32 / 600. */
 export function hashrateFromDifficulty(difficulty: number): HashesPerSecond {
   assertPositive(difficulty, "difficulty");

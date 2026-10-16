@@ -1,6 +1,6 @@
 import { z } from "zod";
 import type { DifficultyAdjustmentInfo, EurCents, HalvingInfo, HashesPerSecond, Sats, UsdCents } from "@/core";
-import { blockSubsidyAtHeight, estimateDateForHeight, eurToCents, nextHalvingHeight, roundHalfAwayFromZero } from "@/core";
+import { blockSubsidyAtHeight, estimateDateForHeight, eurToCents, nextHalvingHeight, plausibleBlockTimeMs, roundHalfAwayFromZero } from "@/core";
 import type { HttpOptions } from "../http";
 import { getJson } from "../http";
 import type { BitcoinPrice, BlockRewardReading, MarketDataProvider, ProviderReading } from "../provider";
@@ -15,6 +15,8 @@ const DifficultyAdjSchema = z.object({
   estimatedRetargetDate: z.number().positive(),
   remainingBlocks: z.number().int().nonnegative(),
   timeAvg: positive,
+  /** Smoothed block time (ms); far more stable than timeAvg early in an epoch. */
+  adjustedTimeAvg: positive.optional(),
 });
 const RewardStatsSchema = z.object({
   startBlock: z.number().int(),
@@ -99,7 +101,7 @@ export class MempoolSpaceProvider implements MarketDataProvider {
     return {
       value: {
         height: target,
-        estimatedDate: estimateDateForHeight(height, target, adj.timeAvg, this.now()),
+        estimatedDate: estimateDateForHeight(height, target, plausibleBlockTimeMs(adj.adjustedTimeAvg ?? adj.timeAvg), this.now()),
         subsidyAfterSats: blockSubsidyAtHeight(target),
       },
       observedAt: this.stamp(),
