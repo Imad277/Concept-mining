@@ -23,6 +23,12 @@ export const faq: FaqItem[] = [
       "Nein. Hardware, Strom, Kühlung, Wartung und Überwachung übernimmt Concept Mining im eigenen Rechenzentrum. Ihr Investment wird einem definierten Teil dieser Rechenleistung zugeordnet; die rechtliche Ausgestaltung regeln die Beteiligungsunterlagen.",
   },
   {
+    id: "nur-bitcoin",
+    question: "Mint Concept Mining nur Bitcoin?",
+    answer:
+      "Bitcoin ist der Kern. Ein Teil der Rechenleistung kann regelbasiert in weiteren Mining-Netzwerken arbeiten, wenn er dort mehr Bitcoin erwirtschaftet; die Erträge werden in Bitcoin umgewandelt. Mindestens die Hälfte der Rechenleistung minet immer Bitcoin.",
+  },
+  {
     id: "laufzeit",
     question: "Wie lange läuft das Investmentmodell?",
     answer:

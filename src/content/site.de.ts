@@ -123,9 +123,32 @@ export const energy = {
 export const operations = {
   number: "06",
   label: "Operative Intelligenz",
-  title: "KI optimiert nicht Bitcoin.",
-  titleEm: "Sie optimiert den Betrieb dahinter.",
-  intro: "Concept Mining verbindet Rechenleistung mit Energie- und Betriebssteuerung. Das Ziel: die vorhandene Mining-Kapazität möglichst effizient zu betreiben.",
+  title: "Jede Kilowattstunde",
+  titleEm: "arbeitet dort, wo sie am meisten Bitcoin bringt.",
+  intro: "Bitcoin ist und bleibt der Kern unseres Minings. Ein Teil unserer Rechenleistung kann zusätzlich in weiteren Mining-Netzwerken arbeiten – immer dann, wenn er dort nachweislich mehr Bitcoin erwirtschaftet. Alle Erträge werden direkt in Bitcoin umgewandelt. Für Sie ändert sich nichts: Ihr Ergebnis entsteht in Bitcoin.",
+  flow: {
+    title: "Das Regelwerk als Weiche",
+    normal: "Vorteil vorhanden",
+    fallback: "Vorteil schwindet",
+    normalText: "Bitcoin-Mining trägt den Großteil. Ein Teil der Rechenleistung arbeitet dort, wo er gerade mehr Bitcoin erwirtschaftet – die Erträge werden in Bitcoin umgewandelt.",
+    fallbackText: "Fällt der Vorteil weg, kehrt die Rechenleistung zu Bitcoin zurück. Das Regelwerk entscheidet nach festen Schwellen, nicht nach Bauchgefühl.",
+    nodes: { energy: "Energie", compute: "Rechenleistung", rules: "Regelwerk", btc: "Bitcoin-Mining", extra: "Weitere Netzwerke", convert: "Umwandlung", result: "Bitcoin" },
+  },
+  steps: [
+    { title: "Messen", text: "Täglich werten wir Marktdaten aus: Was bringt eine Kilowattstunde Rechenleistung in den relevanten Mining-Netzwerken?" },
+    { title: "Vergleichen", text: "Maßstab ist immer Bitcoin-Mining. Zählt nur, was mehr Bitcoin bringt." },
+    { title: "Entscheiden", text: "Feste Regeln statt Bauchgefühl: Rechenleistung wechselt nur bei einem klaren und dauerhaften Vorteil." },
+    { title: "Umwandeln", text: "Erträge werden täglich in Bitcoin getauscht. Wir halten keine anderen Coins." },
+  ],
+  rulesTitle: "Unsere Regeln",
+  rules: [
+    { title: "Bitcoin bleibt Hauptträger", text: "Mindestens die Hälfte unserer Rechenleistung minet Bitcoin." },
+    { title: "Nur mit klarem Vorteil", text: "Andere Netzwerke kommen nur infrage, wenn sie über Monate deutlich mehr Bitcoin je Kilowattstunde erwirtschaften." },
+    { title: "Schneller Rückweg", text: "Fällt der Vorteil weg, kehrt die Rechenleistung zu Bitcoin zurück." },
+    { title: "Kein Bestand", text: "Alles wird täglich in Bitcoin umgewandelt." },
+    { title: "Begrenztes Risiko", text: "Fester Höchstanteil je Netzwerk, nur Märkte mit ausreichend Handelsvolumen." },
+  ],
+  signalsTitle: "Und im Rechenzentrum selbst",
   signals: [
     { title: "Temperatur", text: "Erkennt Überhitzung, bevor Leistung verloren geht." },
     { title: "Leistungsaufnahme", text: "Zeigt, wie effizient jedes Gerät Strom in Rechenleistung umsetzt." },
@@ -134,7 +157,7 @@ export const operations = {
     { title: "Wartungssignale", text: "Wartung nach Zustand statt nach Kalender." },
     { title: "Energie", text: "Rechnet bevorzugt, wenn Solarstrom verfügbar ist." },
   ],
-  not: "Was KI nicht tut: bessere Hashes finden, die Erfolgswahrscheinlichkeit des Minings verändern oder den Bitcoin-Preis beeinflussen.",
+  not: "Was Software nicht kann: bessere Hashes finden, die Erfolgswahrscheinlichkeit des Minings verändern oder den Bitcoin-Preis beeinflussen.",
 };
 
 export const simulation = {
